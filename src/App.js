@@ -61,7 +61,7 @@ function App() {
           turn = "cpu"
           setPlayTurn("cpu")
           xWinCheck()
-          setTimeout(cpuTurn, 1000)
+          setTimeout(cpuTurn, 800)
         } else if (button.id === id && button.bg !== "") {
           alert("Please secelt another field")
         }
@@ -100,7 +100,9 @@ function App() {
           cpuTurn()
         }
       } else {
-        alert("all fields are full")
+        setPopupText("Draw")
+        setButtonBg("gainsboro")
+        setPopupDisplay("flex")
       }
     }
   }
@@ -131,21 +133,21 @@ function App() {
     
     //rows
     if (xFields.includes("1") && xFields.includes("2") && xFields.includes("3")) {
-      setTimeout(xWon, 200)
+      setTimeout(xWon, 150)
     } else if (xFields.includes("4") && xFields.includes("5") && xFields.includes("6")) {
-      setTimeout(xWon, 200)
+      setTimeout(xWon, 150)
     } else if (xFields.includes("7") && xFields.includes("8") && xFields.includes("9")) {
-      setTimeout(xWon, 200) //columns
+      setTimeout(xWon, 150) //columns
     } else if (xFields.includes("1") && xFields.includes("4") && xFields.includes("7")) {
-      setTimeout(xWon, 200)
+      setTimeout(xWon, 150)
     } else if (xFields.includes("2") && xFields.includes("5") && xFields.includes("8")) {
-      setTimeout(xWon, 200)
+      setTimeout(xWon, 150)
     } else if (xFields.includes("3") && xFields.includes("6") && xFields.includes("9")) {
-      setTimeout(xWon, 200) //diagonals
+      setTimeout(xWon, 150) //diagonals
     } else if (xFields.includes("1") && xFields.includes("5") && xFields.includes("9")) {
-      setTimeout(xWon, 200)
+      setTimeout(xWon, 150)
     } else if (xFields.includes("3") && xFields.includes("5") && xFields.includes("7")) {
-      setTimeout(xWon, 200)
+      setTimeout(xWon, 150)
     } 
   }
 
@@ -160,21 +162,21 @@ function App() {
     
     //rows
     if (oFields.includes("1") && oFields.includes("2") && oFields.includes("3")) {
-      setTimeout(oWon, 200)
+      setTimeout(oWon, 150)
     } else if (oFields.includes("4") && oFields.includes("5") && oFields.includes("6")) {
-      setTimeout(oWon, 200)
+      setTimeout(oWon, 150)
     } else if (oFields.includes("7") && oFields.includes("8") && oFields.includes("9")) {
-      setTimeout(oWon, 200) //columns
+      setTimeout(oWon, 150) //columns
     } else if (oFields.includes("1") && oFields.includes("4") && oFields.includes("7")) {
-      setTimeout(oWon, 200)
+      setTimeout(oWon, 150)
     } else if (oFields.includes("2") && oFields.includes("5") && oFields.includes("8")) {
-      setTimeout(oWon, 200)
+      setTimeout(oWon, 150)
     } else if (oFields.includes("3") && oFields.includes("6") && oFields.includes("9")) {
-      setTimeout(oWon, 200) //diagonals
+      setTimeout(oWon, 150) //diagonals
     } else if (oFields.includes("1") && oFields.includes("5") && oFields.includes("9")) {
-      setTimeout(oWon, 200)
+      setTimeout(oWon, 150)
     } else if (oFields.includes("3") && oFields.includes("5") && oFields.includes("7")) {
-      setTimeout(oWon, 200)
+      setTimeout(oWon, 150)
     }
   }
 
