@@ -148,3 +148,19 @@
     width: 30vw;
   }
 }
+
+.btp-button {
+  position: absolute;
+  z-index: 3;
+  bottom: 5vh;
+  left: 0;
+  width: 10vw;
+  margin-left: 45vw;
+  outline: none;
+  cursor: pointer;
+  background-color: #efefef;
+  border: 3px solid black;
+  height: 5vh;
+  font-family: tictactoe;
+  font-size: 2.5vh;
+}
